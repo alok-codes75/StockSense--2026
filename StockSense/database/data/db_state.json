@@ -262,9 +262,9 @@
       "_id": "sb_7",
       "productId": "prd_005",
       "locationId": "loc_001",
-      "quantity": 145,
+      "quantity": 0,
       "reservedQuantity": 20,
-      "updatedAt": "2026-09-26T09:44:42.399Z"
+      "updatedAt": "2026-09-26T10:15:04.921Z"
     },
     {
       "_id": "sb_8",
@@ -386,8 +386,38 @@
       "validatedBy": "usr_mgr_001"
     }
   ],
-  "adjustments": [],
+  "adjustments": [
+    {
+      "_id": "adj_1790417704922_6o5q",
+      "adjustmentNumber": "ADJ-2026-0001",
+      "productId": "prd_005",
+      "locationId": "loc_001",
+      "systemQuantity": 145,
+      "countedQuantity": 0,
+      "difference": -145,
+      "reason": "bhif,jh",
+      "createdAt": "2026-09-26T10:15:04.922Z",
+      "validatedBy": "usr_mgr_001"
+    }
+  ],
   "stockLedger": [
+    {
+      "_id": "ldg_1790417704921_cmfz",
+      "movementType": "INVENTORY_ADJUSTMENT",
+      "productId": "prd_005",
+      "sku": "SKU-LBL-4060",
+      "productName": "Direct Thermal Shipping Labels 4x6 (1000 Labels/Roll)",
+      "locationId": "loc_001",
+      "locationName": "A-01-BIN (Zone A - Fast Pick Bin 01)",
+      "quantityChange": -145,
+      "balanceAfter": 0,
+      "referenceType": "ADJUSTMENT",
+      "referenceNumber": "ADJ-2026-0001",
+      "reason": "Cycle Count: bhif,jh (System: 145 -> Physical: 0, Diff: -145)",
+      "performedBy": "usr_mgr_001",
+      "performedByName": "Prince sah",
+      "createdAt": "2026-09-26T10:15:04.921Z"
+    },
     {
       "_id": "ldg_init_1",
       "movementType": "INITIAL_BALANCE",
