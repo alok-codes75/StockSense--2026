@@ -1,0 +1,208 @@
+{
+  "users": [
+    {
+      "id": "usr_mgr_001",
+      "email": "manager@stocksense.io",
+      "passwordHash": "$2b$10$DmoHHTdu.p8qLKFWo/4vO.mCrd8GJ2lbEAXH6If6/Fl/yLhJ2Cd9O",
+      "fullName": "Prince sah",
+      "role": "INVENTORY_MANAGER",
+      "department": "Supply Chain & Operations",
+      "isActive": true
+    },
+    {
+      "id": "usr_stf_001",
+      "email": "staff@stocksense.io",
+      "passwordHash": "$2b$10$DmoHHTdu.p8qLKFWo/4vO.mCrd8GJ2lbEAXH6If6/Fl/yLhJ2Cd9O",
+      "fullName": "Alok gupta",
+      "role": "WAREHOUSE_STAFF",
+      "department": "Fulfillment & Receiving",
+      "isActive": true
+    }
+  ],
+  "warehouses": [
+    {
+      "id": "wh_001",
+      "code": "WH-CENTRAL",
+      "name": "Central Logistics Hub",
+      "address": "742 Industrial Parkway",
+      "city": "Chicago, IL",
+      "contactEmail": "central-ops@stocksense.io",
+      "contactPhone": "+1 (312) 555-0199",
+      "isActive": true
+    },
+    {
+      "id": "wh_002",
+      "code": "WH-WEST",
+      "name": "Pacific Coast Distribution",
+      "address": "1200 Harbor Boulevard",
+      "city": "Oakland, CA",
+      "contactEmail": "west-ops@stocksense.io",
+      "contactPhone": "+1 (510) 555-0142",
+      "isActive": true
+    }
+  ],
+  "locations": [
+    {
+      "id": "loc_001",
+      "warehouseId": "wh_001",
+      "code": "A-01-BIN",
+      "name": "Zone A - Fast Pick Bin 01",
+      "zone": "Zone A (High Velocity)",
+      "aisle": "Aisle 1",
+      "shelf": "Shelf B",
+      "capacity": 5000,
+      "isActive": true
+    },
+    {
+      "id": "loc_002",
+      "warehouseId": "wh_001",
+      "code": "RCV-DOCK-1",
+      "name": "Receiving Staging Dock 1",
+      "zone": "Inbound Receiving",
+      "aisle": "Dock Area",
+      "shelf": "Floor Pallet",
+      "capacity": 20000,
+      "isActive": true
+    },
+    {
+      "id": "loc_003",
+      "warehouseId": "wh_001",
+      "code": "BULK-RACK-04",
+      "name": "Bulk Storage Rack 04",
+      "zone": "Zone C (Bulk Storage)",
+      "aisle": "Aisle 4",
+      "shelf": "Level 3",
+      "capacity": 15000,
+      "isActive": true
+    },
+    {
+      "id": "loc_004",
+      "warehouseId": "wh_002",
+      "code": "PAC-PICK-10",
+      "name": "West Coast Forward Pick Bay",
+      "zone": "Pick Area W1",
+      "aisle": "Aisle 10",
+      "shelf": "Shelf A",
+      "capacity": 8000,
+      "isActive": true
+    }
+  ],
+  "products": [
+    {
+      "id": "prd_001",
+      "sku": "SKU-STL-8012",
+      "name": "Grade 8.8 M10 Flanged Hex Bolts (Pack of 100)",
+      "description": "High tensile carbon steel structural fasteners with zinc flanged coat.",
+      "category": "Fasteners & Hardware",
+      "unitOfMeasure": "BOX",
+      "costPrice": 14.50,
+      "sellingPrice": 24.99,
+      "reorderThreshold": 35,
+      "isActive": true,
+      "isArchived": false
+    },
+    {
+      "id": "prd_002",
+      "sku": "SKU-BAT-4810",
+      "name": "Lithium-Ion Pack 48V 20Ah Industrial Battery",
+      "description": "Deep-cycle battery module with integrated Smart Battery Management System (BMS).",
+      "category": "Energy & Power",
+      "unitOfMeasure": "UNIT",
+      "costPrice": 380.00,
+      "sellingPrice": 599.00,
+      "reorderThreshold": 15,
+      "isActive": true,
+      "isArchived": false
+    },
+    {
+      "id": "prd_003",
+      "sku": "SKU-SAF-9901",
+      "name": "ANSI Class 3 High-Visibility Safety Vest (L/XL)",
+      "description": "Fluorescent lime-yellow breathable mesh vest with 3M Scotchlite reflective stripes.",
+      "category": "Safety Equipment",
+      "unitOfMeasure": "EACH",
+      "costPrice": 8.20,
+      "sellingPrice": 16.50,
+      "reorderThreshold": 50,
+      "isActive": true,
+      "isArchived": false
+    },
+    {
+      "id": "prd_004",
+      "sku": "SKU-HYD-3044",
+      "name": "Heavy-Duty Hydraulic Cylinder Seal Kit 30mm",
+      "description": "Fluorocarbon (FKM) rod and piston seal replacement kit for high-pressure systems.",
+      "category": "Hydraulics & Pneumatics",
+      "unitOfMeasure": "KIT",
+      "costPrice": 22.00,
+      "sellingPrice": 44.95,
+      "reorderThreshold": 20,
+      "isActive": true,
+      "isArchived": false
+    },
+    {
+      "id": "prd_005",
+      "sku": "SKU-LBL-4060",
+      "name": "Direct Thermal Shipping Labels 4x6 (1000 Labels/Roll)",
+      "description": "BPA-free smudge-proof adhesive shipping labels with perforation.",
+      "category": "Packaging & Shipping",
+      "unitOfMeasure": "ROLL",
+      "costPrice": 6.80,
+      "sellingPrice": 14.00,
+      "reorderThreshold": 40,
+      "isActive": true,
+      "isArchived": false
+    },
+    {
+      "id": "prd_006",
+      "sku": "SKU-ELC-1002",
+      "name": "Pure Copper Stranded THHN Wire 12 AWG (500ft)",
+      "description": "Nylon jacketed heat and moisture resistant building wire.",
+      "category": "Electrical & Wiring",
+      "unitOfMeasure": "SPOOL",
+      "costPrice": 64.00,
+      "sellingPrice": 115.00,
+      "reorderThreshold": 10,
+      "isActive": true,
+      "isArchived": false
+    },
+    {
+      "id": "prd_007",
+      "sku": "SKU-OIL-1540",
+      "name": "Synthetic Heavy Duty Engine Oil 15W-40 (5 Gal Pail)",
+      "description": "CJ-4/CK-4 premium commercial fleet diesel engine lubricant.",
+      "category": "Fluids & Chemicals",
+      "unitOfMeasure": "PAIL",
+      "costPrice": 48.00,
+      "sellingPrice": 82.50,
+      "reorderThreshold": 12,
+      "isActive": true,
+      "isArchived": false
+    },
+    {
+      "id": "prd_008",
+      "sku": "SKU-FLT-2009",
+      "name": "High-Efficiency Micron Air Intake Filter Cartridge",
+      "description": "Pleated synthetic filtration media for cleanroom air intake compressors.",
+      "category": "Hydraulics & Pneumatics",
+      "unitOfMeasure": "UNIT",
+      "costPrice": 29.50,
+      "sellingPrice": 58.00,
+      "reorderThreshold": 25,
+      "isActive": true,
+      "isArchived": false
+    }
+  ],
+  "stockBalances": [
+    { "productId": "prd_001", "locationId": "loc_001", "quantity": 180, "reservedQuantity": 15 },
+    { "productId": "prd_001", "locationId": "loc_004", "quantity": 90, "reservedQuantity": 0 },
+    { "productId": "prd_002", "locationId": "loc_001", "quantity": 8, "reservedQuantity": 2 },
+    { "productId": "prd_002", "locationId": "loc_003", "quantity": 4, "reservedQuantity": 0 },
+    { "productId": "prd_003", "locationId": "loc_001", "quantity": 220, "reservedQuantity": 30 },
+    { "productId": "prd_004", "locationId": "loc_001", "quantity": 12, "reservedQuantity": 0 },
+    { "productId": "prd_005", "locationId": "loc_001", "quantity": 145, "reservedQuantity": 20 },
+    { "productId": "prd_006", "locationId": "loc_003", "quantity": 18, "reservedQuantity": 0 },
+    { "productId": "prd_007", "locationId": "loc_003", "quantity": 6, "reservedQuantity": 0 },
+    { "productId": "prd_008", "locationId": "loc_001", "quantity": 3, "reservedQuantity": 0 }
+  ]
+}

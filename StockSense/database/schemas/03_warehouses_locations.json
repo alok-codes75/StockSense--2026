@@ -1,0 +1,37 @@
+{
+  "warehouses": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": ["code", "name", "isActive", "createdAt"],
+      "properties": {
+        "_id": { "bsonType": "objectId" },
+        "code": { "bsonType": "string", "description": "Unique code e.g. WH-NORTH" },
+        "name": { "bsonType": "string" },
+        "address": { "bsonType": "string" },
+        "city": { "bsonType": "string" },
+        "contactEmail": { "bsonType": "string" },
+        "contactPhone": { "bsonType": "string" },
+        "isActive": { "bsonType": "bool" },
+        "createdAt": { "bsonType": "date" }
+      }
+    }
+  },
+  "locations": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": ["warehouseId", "code", "name", "zone", "isActive", "createdAt"],
+      "properties": {
+        "_id": { "bsonType": "objectId" },
+        "warehouseId": { "bsonType": "objectId" },
+        "code": { "bsonType": "string", "description": "e.g. A-01-BIN" },
+        "name": { "bsonType": "string" },
+        "zone": { "bsonType": "string" },
+        "aisle": { "bsonType": "string" },
+        "shelf": { "bsonType": "string" },
+        "capacity": { "bsonType": "number" },
+        "isActive": { "bsonType": "bool" },
+        "createdAt": { "bsonType": "date" }
+      }
+    }
+  }
+}

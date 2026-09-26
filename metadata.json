@@ -1,0 +1,6 @@
+{
+  "name": "StockSense - Modular Inventory Management System",
+  "description": "StockSense is a centralized, production-grade Inventory Management System for Warehouse Staff and Inventory Managers featuring live stock tracking, receipts, delivery orders, internal transfers, adjustments, and an auditable stock ledger.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

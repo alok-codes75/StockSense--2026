@@ -1,0 +1,27 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": ["sku", "name", "category", "unitOfMeasure", "reorderThreshold", "isActive", "createdAt"],
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "sku": {
+        "bsonType": "string",
+        "description": "Stock Keeping Unit, globally unique"
+      },
+      "name": { "bsonType": "string" },
+      "description": { "bsonType": "string" },
+      "category": { "bsonType": "string" },
+      "unitOfMeasure": { "bsonType": "string" },
+      "costPrice": { "bsonType": "number" },
+      "sellingPrice": { "bsonType": "number" },
+      "reorderThreshold": {
+        "bsonType": "number",
+        "minimum": 0
+      },
+      "isActive": { "bsonType": "bool" },
+      "isArchived": { "bsonType": "bool" },
+      "createdAt": { "bsonType": "date" },
+      "updatedAt": { "bsonType": "date" }
+    }
+  }
+}

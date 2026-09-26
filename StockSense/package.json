@@ -1,0 +1,12 @@
+{
+  "name": "stocksense-suite",
+  "version": "1.0.0",
+  "description": "StockSense Modular Inventory Management System",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx ../server.ts",
+    "seed": "tsx database/scripts/seed.ts",
+    "test": "tsx backend/tests/run_tests.ts"
+  }
+}

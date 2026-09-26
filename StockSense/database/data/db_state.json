@@ -1,0 +1,563 @@
+{
+  "users": [
+    {
+      "_id": "usr_mgr_001",
+      "email": "manager@stocksense.io",
+      "passwordHash": "$2b$10$DmoHHTdu.p8qLKFWo/4vO.mCrd8GJ2lbEAXH6If6/Fl/yLhJ2Cd9O",
+      "fullName": "Prince sah",
+      "role": "INVENTORY_MANAGER",
+      "department": "Supply Chain & Operations",
+      "isActive": true,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "usr_stf_001",
+      "email": "staff@stocksense.io",
+      "passwordHash": "$2b$10$DmoHHTdu.p8qLKFWo/4vO.mCrd8GJ2lbEAXH6If6/Fl/yLhJ2Cd9O",
+      "fullName": "Alok gupta",
+      "role": "WAREHOUSE_STAFF",
+      "department": "Fulfillment & Receiving",
+      "isActive": true,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    }
+  ],
+  "products": [
+    {
+      "_id": "prd_001",
+      "sku": "SKU-STL-8012",
+      "name": "Grade 8.8 M10 Flanged Hex Bolts (Pack of 100)",
+      "description": "High tensile carbon steel structural fasteners with zinc flanged coat.",
+      "category": "Fasteners & Hardware",
+      "unitOfMeasure": "BOX",
+      "costPrice": 14.5,
+      "sellingPrice": 24.99,
+      "reorderThreshold": 35,
+      "isActive": true,
+      "isArchived": false,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "prd_002",
+      "sku": "SKU-BAT-4810",
+      "name": "Lithium-Ion Pack 48V 20Ah Industrial Battery",
+      "description": "Deep-cycle battery module with integrated Smart Battery Management System (BMS).",
+      "category": "Energy & Power",
+      "unitOfMeasure": "UNIT",
+      "costPrice": 380,
+      "sellingPrice": 599,
+      "reorderThreshold": 15,
+      "isActive": true,
+      "isArchived": false,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "prd_003",
+      "sku": "SKU-SAF-9901",
+      "name": "ANSI Class 3 High-Visibility Safety Vest (L/XL)",
+      "description": "Fluorescent lime-yellow breathable mesh vest with 3M Scotchlite reflective stripes.",
+      "category": "Safety Equipment",
+      "unitOfMeasure": "EACH",
+      "costPrice": 8.2,
+      "sellingPrice": 16.5,
+      "reorderThreshold": 50,
+      "isActive": true,
+      "isArchived": false,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "prd_004",
+      "sku": "SKU-HYD-3044",
+      "name": "Heavy-Duty Hydraulic Cylinder Seal Kit 30mm",
+      "description": "Fluorocarbon (FKM) rod and piston seal replacement kit for high-pressure systems.",
+      "category": "Hydraulics & Pneumatics",
+      "unitOfMeasure": "KIT",
+      "costPrice": 22,
+      "sellingPrice": 44.95,
+      "reorderThreshold": 20,
+      "isActive": true,
+      "isArchived": false,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "prd_005",
+      "sku": "SKU-LBL-4060",
+      "name": "Direct Thermal Shipping Labels 4x6 (1000 Labels/Roll)",
+      "description": "BPA-free smudge-proof adhesive shipping labels with perforation.",
+      "category": "Packaging & Shipping",
+      "unitOfMeasure": "ROLL",
+      "costPrice": 6.8,
+      "sellingPrice": 14,
+      "reorderThreshold": 40,
+      "isActive": true,
+      "isArchived": false,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "prd_006",
+      "sku": "SKU-ELC-1002",
+      "name": "Pure Copper Stranded THHN Wire 12 AWG (500ft)",
+      "description": "Nylon jacketed heat and moisture resistant building wire.",
+      "category": "Electrical & Wiring",
+      "unitOfMeasure": "SPOOL",
+      "costPrice": 64,
+      "sellingPrice": 115,
+      "reorderThreshold": 10,
+      "isActive": true,
+      "isArchived": false,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "prd_007",
+      "sku": "SKU-OIL-1540",
+      "name": "Synthetic Heavy Duty Engine Oil 15W-40 (5 Gal Pail)",
+      "description": "CJ-4/CK-4 premium commercial fleet diesel engine lubricant.",
+      "category": "Fluids & Chemicals",
+      "unitOfMeasure": "PAIL",
+      "costPrice": 48,
+      "sellingPrice": 82.5,
+      "reorderThreshold": 12,
+      "isActive": true,
+      "isArchived": false,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "prd_008",
+      "sku": "SKU-FLT-2009",
+      "name": "High-Efficiency Micron Air Intake Filter Cartridge",
+      "description": "Pleated synthetic filtration media for cleanroom air intake compressors.",
+      "category": "Hydraulics & Pneumatics",
+      "unitOfMeasure": "UNIT",
+      "costPrice": 29.5,
+      "sellingPrice": 58,
+      "reorderThreshold": 25,
+      "isActive": true,
+      "isArchived": false,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    }
+  ],
+  "warehouses": [
+    {
+      "_id": "wh_001",
+      "code": "WH-CENTRAL",
+      "name": "Central Logistics Hub",
+      "address": "742 Industrial Parkway",
+      "city": "Chicago, IL",
+      "contactEmail": "central-ops@stocksense.io",
+      "contactPhone": "+1 (312) 555-0199",
+      "isActive": true,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "wh_002",
+      "code": "WH-WEST",
+      "name": "Pacific Coast Distribution",
+      "address": "1200 Harbor Boulevard",
+      "city": "Oakland, CA",
+      "contactEmail": "west-ops@stocksense.io",
+      "contactPhone": "+1 (510) 555-0142",
+      "isActive": true,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    }
+  ],
+  "locations": [
+    {
+      "_id": "loc_001",
+      "warehouseId": "wh_001",
+      "code": "A-01-BIN",
+      "name": "Zone A - Fast Pick Bin 01",
+      "zone": "Zone A (High Velocity)",
+      "aisle": "Aisle 1",
+      "shelf": "Shelf B",
+      "capacity": 5000,
+      "isActive": true,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "loc_002",
+      "warehouseId": "wh_001",
+      "code": "RCV-DOCK-1",
+      "name": "Receiving Staging Dock 1",
+      "zone": "Inbound Receiving",
+      "aisle": "Dock Area",
+      "shelf": "Floor Pallet",
+      "capacity": 20000,
+      "isActive": true,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "loc_003",
+      "warehouseId": "wh_001",
+      "code": "BULK-RACK-04",
+      "name": "Bulk Storage Rack 04",
+      "zone": "Zone C (Bulk Storage)",
+      "aisle": "Aisle 4",
+      "shelf": "Level 3",
+      "capacity": 15000,
+      "isActive": true,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "loc_004",
+      "warehouseId": "wh_002",
+      "code": "PAC-PICK-10",
+      "name": "West Coast Forward Pick Bay",
+      "zone": "Pick Area W1",
+      "aisle": "Aisle 10",
+      "shelf": "Shelf A",
+      "capacity": 8000,
+      "isActive": true,
+      "createdAt": "2026-09-26T09:44:42.399Z"
+    }
+  ],
+  "stockBalances": [
+    {
+      "_id": "sb_1",
+      "productId": "prd_001",
+      "locationId": "loc_001",
+      "quantity": 180,
+      "reservedQuantity": 15,
+      "updatedAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "sb_2",
+      "productId": "prd_001",
+      "locationId": "loc_004",
+      "quantity": 90,
+      "reservedQuantity": 0,
+      "updatedAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "sb_3",
+      "productId": "prd_002",
+      "locationId": "loc_001",
+      "quantity": 8,
+      "reservedQuantity": 2,
+      "updatedAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "sb_4",
+      "productId": "prd_002",
+      "locationId": "loc_003",
+      "quantity": 4,
+      "reservedQuantity": 0,
+      "updatedAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "sb_5",
+      "productId": "prd_003",
+      "locationId": "loc_001",
+      "quantity": 220,
+      "reservedQuantity": 30,
+      "updatedAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "sb_6",
+      "productId": "prd_004",
+      "locationId": "loc_001",
+      "quantity": 12,
+      "reservedQuantity": 0,
+      "updatedAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "sb_7",
+      "productId": "prd_005",
+      "locationId": "loc_001",
+      "quantity": 145,
+      "reservedQuantity": 20,
+      "updatedAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "sb_8",
+      "productId": "prd_006",
+      "locationId": "loc_003",
+      "quantity": 18,
+      "reservedQuantity": 0,
+      "updatedAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "sb_9",
+      "productId": "prd_007",
+      "locationId": "loc_003",
+      "quantity": 6,
+      "reservedQuantity": 0,
+      "updatedAt": "2026-09-26T09:44:42.399Z"
+    },
+    {
+      "_id": "sb_10",
+      "productId": "prd_008",
+      "locationId": "loc_001",
+      "quantity": 3,
+      "reservedQuantity": 0,
+      "updatedAt": "2026-09-26T09:44:42.399Z"
+    }
+  ],
+  "receipts": [
+    {
+      "_id": "rec_001",
+      "receiptNumber": "REC-2026-0001",
+      "supplierName": "Apex Industrial Fasteners Ltd",
+      "destinationLocationId": "loc_001",
+      "status": "DONE",
+      "items": [
+        {
+          "productId": "prd_001",
+          "quantity": 50,
+          "unitPrice": 14.5,
+          "receivedQuantity": 50
+        }
+      ],
+      "notes": "Standard stock replenishment PO-9942",
+      "createdAt": "2026-09-23T09:44:42.400Z",
+      "validatedAt": "2026-09-23T09:44:42.400Z",
+      "validatedBy": "usr_mgr_001"
+    },
+    {
+      "_id": "rec_002",
+      "receiptNumber": "REC-2026-0002",
+      "supplierName": "Global Power Systems Inc",
+      "destinationLocationId": "loc_002",
+      "status": "READY",
+      "items": [
+        {
+          "productId": "prd_002",
+          "quantity": 10,
+          "unitPrice": 380
+        }
+      ],
+      "notes": "Priority delivery for Q4 warehouse buffer",
+      "createdAt": "2026-09-26T03:44:42.400Z"
+    }
+  ],
+  "deliveries": [
+    {
+      "_id": "del_001",
+      "deliveryNumber": "DEL-2026-0001",
+      "customerName": "Meridian Manufacturing Corp",
+      "sourceLocationId": "loc_001",
+      "status": "DONE",
+      "items": [
+        {
+          "productId": "prd_001",
+          "quantity": 20,
+          "shippedQuantity": 20
+        }
+      ],
+      "trackingNumber": "TRK-FX-889021",
+      "shippingAddress": "450 Northside Road, Milwaukee, WI",
+      "notes": "Expedited dock freight",
+      "createdAt": "2026-09-24T09:44:42.400Z",
+      "validatedAt": "2026-09-24T09:44:42.400Z",
+      "validatedBy": "usr_stf_001"
+    },
+    {
+      "_id": "del_002",
+      "deliveryNumber": "DEL-2026-0002",
+      "customerName": "Vanguard Industrial Services",
+      "sourceLocationId": "loc_001",
+      "status": "READY",
+      "items": [
+        {
+          "productId": "prd_003",
+          "quantity": 15
+        }
+      ],
+      "trackingNumber": "TRK-UPS-11029",
+      "shippingAddress": "88 Commerce Blvd, Joliet, IL",
+      "notes": "Standard ground delivery",
+      "createdAt": "2026-09-26T05:44:42.400Z"
+    }
+  ],
+  "transfers": [
+    {
+      "_id": "trf_001",
+      "transferNumber": "TRF-2026-0001",
+      "sourceLocationId": "loc_001",
+      "destinationLocationId": "loc_003",
+      "status": "DONE",
+      "items": [
+        {
+          "productId": "prd_001",
+          "quantity": 30
+        }
+      ],
+      "reason": "Replenishing bulk reserve from pick zone",
+      "createdAt": "2026-09-25T09:44:42.400Z",
+      "validatedAt": "2026-09-25T09:44:42.400Z",
+      "validatedBy": "usr_mgr_001"
+    }
+  ],
+  "adjustments": [],
+  "stockLedger": [
+    {
+      "_id": "ldg_init_1",
+      "movementType": "INITIAL_BALANCE",
+      "productId": "prd_001",
+      "sku": "SKU-STL-8012",
+      "productName": "Grade 8.8 M10 Flanged Hex Bolts (Pack of 100)",
+      "locationId": "loc_001",
+      "locationName": "A-01-BIN (Zone A - Fast Pick Bin 01)",
+      "quantityChange": 180,
+      "balanceAfter": 180,
+      "referenceType": "SEED",
+      "referenceNumber": "INIT-0001",
+      "reason": "Initial system baseline stock load",
+      "performedBy": "usr_mgr_001",
+      "performedByName": "System Administrator (Sarah Jenkins)",
+      "createdAt": "2026-09-24T09:44:42.400Z"
+    },
+    {
+      "_id": "ldg_init_2",
+      "movementType": "INITIAL_BALANCE",
+      "productId": "prd_001",
+      "sku": "SKU-STL-8012",
+      "productName": "Grade 8.8 M10 Flanged Hex Bolts (Pack of 100)",
+      "locationId": "loc_004",
+      "locationName": "PAC-PICK-10 (West Coast Forward Pick Bay)",
+      "quantityChange": 90,
+      "balanceAfter": 90,
+      "referenceType": "SEED",
+      "referenceNumber": "INIT-0002",
+      "reason": "Initial system baseline stock load",
+      "performedBy": "usr_mgr_001",
+      "performedByName": "System Administrator (Sarah Jenkins)",
+      "createdAt": "2026-09-24T09:44:42.400Z"
+    },
+    {
+      "_id": "ldg_init_3",
+      "movementType": "INITIAL_BALANCE",
+      "productId": "prd_002",
+      "sku": "SKU-BAT-4810",
+      "productName": "Lithium-Ion Pack 48V 20Ah Industrial Battery",
+      "locationId": "loc_001",
+      "locationName": "A-01-BIN (Zone A - Fast Pick Bin 01)",
+      "quantityChange": 8,
+      "balanceAfter": 8,
+      "referenceType": "SEED",
+      "referenceNumber": "INIT-0003",
+      "reason": "Initial system baseline stock load",
+      "performedBy": "usr_mgr_001",
+      "performedByName": "System Administrator (Sarah Jenkins)",
+      "createdAt": "2026-09-24T09:44:42.400Z"
+    },
+    {
+      "_id": "ldg_init_4",
+      "movementType": "INITIAL_BALANCE",
+      "productId": "prd_002",
+      "sku": "SKU-BAT-4810",
+      "productName": "Lithium-Ion Pack 48V 20Ah Industrial Battery",
+      "locationId": "loc_003",
+      "locationName": "BULK-RACK-04 (Bulk Storage Rack 04)",
+      "quantityChange": 4,
+      "balanceAfter": 4,
+      "referenceType": "SEED",
+      "referenceNumber": "INIT-0004",
+      "reason": "Initial system baseline stock load",
+      "performedBy": "usr_mgr_001",
+      "performedByName": "System Administrator (Sarah Jenkins)",
+      "createdAt": "2026-09-24T09:44:42.400Z"
+    },
+    {
+      "_id": "ldg_init_5",
+      "movementType": "INITIAL_BALANCE",
+      "productId": "prd_003",
+      "sku": "SKU-SAF-9901",
+      "productName": "ANSI Class 3 High-Visibility Safety Vest (L/XL)",
+      "locationId": "loc_001",
+      "locationName": "A-01-BIN (Zone A - Fast Pick Bin 01)",
+      "quantityChange": 220,
+      "balanceAfter": 220,
+      "referenceType": "SEED",
+      "referenceNumber": "INIT-0005",
+      "reason": "Initial system baseline stock load",
+      "performedBy": "usr_mgr_001",
+      "performedByName": "System Administrator (Sarah Jenkins)",
+      "createdAt": "2026-09-24T09:44:42.400Z"
+    },
+    {
+      "_id": "ldg_init_6",
+      "movementType": "INITIAL_BALANCE",
+      "productId": "prd_004",
+      "sku": "SKU-HYD-3044",
+      "productName": "Heavy-Duty Hydraulic Cylinder Seal Kit 30mm",
+      "locationId": "loc_001",
+      "locationName": "A-01-BIN (Zone A - Fast Pick Bin 01)",
+      "quantityChange": 12,
+      "balanceAfter": 12,
+      "referenceType": "SEED",
+      "referenceNumber": "INIT-0006",
+      "reason": "Initial system baseline stock load",
+      "performedBy": "usr_mgr_001",
+      "performedByName": "System Administrator (Sarah Jenkins)",
+      "createdAt": "2026-09-24T09:44:42.400Z"
+    },
+    {
+      "_id": "ldg_init_7",
+      "movementType": "INITIAL_BALANCE",
+      "productId": "prd_005",
+      "sku": "SKU-LBL-4060",
+      "productName": "Direct Thermal Shipping Labels 4x6 (1000 Labels/Roll)",
+      "locationId": "loc_001",
+      "locationName": "A-01-BIN (Zone A - Fast Pick Bin 01)",
+      "quantityChange": 145,
+      "balanceAfter": 145,
+      "referenceType": "SEED",
+      "referenceNumber": "INIT-0007",
+      "reason": "Initial system baseline stock load",
+      "performedBy": "usr_mgr_001",
+      "performedByName": "System Administrator (Sarah Jenkins)",
+      "createdAt": "2026-09-24T09:44:42.400Z"
+    },
+    {
+      "_id": "ldg_init_8",
+      "movementType": "INITIAL_BALANCE",
+      "productId": "prd_006",
+      "sku": "SKU-ELC-1002",
+      "productName": "Pure Copper Stranded THHN Wire 12 AWG (500ft)",
+      "locationId": "loc_003",
+      "locationName": "BULK-RACK-04 (Bulk Storage Rack 04)",
+      "quantityChange": 18,
+      "balanceAfter": 18,
+      "referenceType": "SEED",
+      "referenceNumber": "INIT-0008",
+      "reason": "Initial system baseline stock load",
+      "performedBy": "usr_mgr_001",
+      "performedByName": "System Administrator (Sarah Jenkins)",
+      "createdAt": "2026-09-24T09:44:42.400Z"
+    },
+    {
+      "_id": "ldg_init_9",
+      "movementType": "INITIAL_BALANCE",
+      "productId": "prd_007",
+      "sku": "SKU-OIL-1540",
+      "productName": "Synthetic Heavy Duty Engine Oil 15W-40 (5 Gal Pail)",
+      "locationId": "loc_003",
+      "locationName": "BULK-RACK-04 (Bulk Storage Rack 04)",
+      "quantityChange": 6,
+      "balanceAfter": 6,
+      "referenceType": "SEED",
+      "referenceNumber": "INIT-0009",
+      "reason": "Initial system baseline stock load",
+      "performedBy": "usr_mgr_001",
+      "performedByName": "System Administrator (Sarah Jenkins)",
+      "createdAt": "2026-09-24T09:44:42.400Z"
+    },
+    {
+      "_id": "ldg_init_10",
+      "movementType": "INITIAL_BALANCE",
+      "productId": "prd_008",
+      "sku": "SKU-FLT-2009",
+      "productName": "High-Efficiency Micron Air Intake Filter Cartridge",
+      "locationId": "loc_001",
+      "locationName": "A-01-BIN (Zone A - Fast Pick Bin 01)",
+      "quantityChange": 3,
+      "balanceAfter": 3,
+      "referenceType": "SEED",
+      "referenceNumber": "INIT-0010",
+      "reason": "Initial system baseline stock load",
+      "performedBy": "usr_mgr_001",
+      "performedByName": "System Administrator (Sarah Jenkins)",
+      "createdAt": "2026-09-24T09:44:42.400Z"
+    }
+  ],
+  "passwordResets": []
+}

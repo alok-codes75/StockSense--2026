@@ -1,0 +1,61 @@
+{
+  "receipts": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": ["receiptNumber", "supplierName", "destinationLocationId", "items", "status", "createdAt"],
+      "properties": {
+        "_id": { "bsonType": "objectId" },
+        "receiptNumber": { "bsonType": "string" },
+        "supplierName": { "bsonType": "string" },
+        "destinationLocationId": { "bsonType": "objectId" },
+        "status": { "enum": ["DRAFT", "READY", "DONE", "CANCELLED"] },
+        "items": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "object",
+            "required": ["productId", "quantity", "unitPrice"],
+            "properties": {
+              "productId": { "bsonType": "objectId" },
+              "quantity": { "bsonType": "number", "minimum": 1 },
+              "unitPrice": { "bsonType": "number" },
+              "receivedQuantity": { "bsonType": "number" }
+            }
+          }
+        },
+        "notes": { "bsonType": "string" },
+        "validatedAt": { "bsonType": "date" },
+        "validatedBy": { "bsonType": "objectId" }
+      }
+    }
+  },
+  "deliveries": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": ["deliveryNumber", "customerName", "sourceLocationId", "items", "status", "createdAt"],
+      "properties": {
+        "_id": { "bsonType": "objectId" },
+        "deliveryNumber": { "bsonType": "string" },
+        "customerName": { "bsonType": "string" },
+        "sourceLocationId": { "bsonType": "objectId" },
+        "status": { "enum": ["DRAFT", "WAITING", "READY", "DONE", "CANCELLED"] },
+        "items": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "object",
+            "required": ["productId", "quantity"],
+            "properties": {
+              "productId": { "bsonType": "objectId" },
+              "quantity": { "bsonType": "number", "minimum": 1 },
+              "shippedQuantity": { "bsonType": "number" }
+            }
+          }
+        },
+        "trackingNumber": { "bsonType": "string" },
+        "shippingAddress": { "bsonType": "string" },
+        "notes": { "bsonType": "string" },
+        "validatedAt": { "bsonType": "date" },
+        "validatedBy": { "bsonType": "objectId" }
+      }
+    }
+  }
+}

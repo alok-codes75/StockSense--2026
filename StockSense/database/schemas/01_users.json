@@ -1,0 +1,29 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": ["email", "passwordHash", "fullName", "role", "isActive", "createdAt"],
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "email": {
+        "bsonType": "string",
+        "pattern": "^.+@.+$",
+        "description": "Unique email address"
+      },
+      "passwordHash": {
+        "bsonType": "string",
+        "description": "Bcrypt-hashed password string"
+      },
+      "fullName": {
+        "bsonType": "string"
+      },
+      "role": {
+        "enum": ["INVENTORY_MANAGER", "WAREHOUSE_STAFF"],
+        "description": "User authorization tier"
+      },
+      "department": { "bsonType": "string" },
+      "isActive": { "bsonType": "bool" },
+      "createdAt": { "bsonType": "date" },
+      "updatedAt": { "bsonType": "date" }
+    }
+  }
+}

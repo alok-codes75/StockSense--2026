@@ -1,0 +1,21 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": ["productId", "locationId", "quantity", "updatedAt"],
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "productId": { "bsonType": "objectId" },
+      "locationId": { "bsonType": "objectId" },
+      "quantity": {
+        "bsonType": "number",
+        "minimum": 0,
+        "description": "Stock on hand at location. Must never be negative."
+      },
+      "reservedQuantity": {
+        "bsonType": "number",
+        "minimum": 0
+      },
+      "updatedAt": { "bsonType": "date" }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "movementType",
+      "productId",
+      "sku",
+      "productName",
+      "quantityChange",
+      "balanceAfter",
+      "referenceType",
+      "referenceNumber",
+      "performedBy",
+      "createdAt"
+    ],
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "movementType": {
+        "enum": ["RECEIPT", "DELIVERY", "INTERNAL_TRANSFER_OUT", "INTERNAL_TRANSFER_IN", "INVENTORY_ADJUSTMENT"]
+      },
+      "productId": { "bsonType": "objectId" },
+      "sku": { "bsonType": "string" },
+      "productName": { "bsonType": "string" },
+      "sourceLocationId": { "bsonType": "objectId" },
+      "destinationLocationId": { "bsonType": "objectId" },
+      "locationId": { "bsonType": "objectId" },
+      "locationName": { "bsonType": "string" },
+      "quantityChange": { "bsonType": "number" },
+      "balanceAfter": { "bsonType": "number" },
+      "referenceType": {
+        "enum": ["RECEIPT", "DELIVERY", "TRANSFER", "ADJUSTMENT", "INITIAL_SEED"]
+      },
+      "referenceNumber": { "bsonType": "string" },
+      "reason": { "bsonType": "string" },
+      "performedBy": { "bsonType": "objectId" },
+      "performedByName": { "bsonType": "string" },
+      "createdAt": { "bsonType": "date" }
+    }
+  }
+}
